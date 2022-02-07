@@ -21,3 +21,16 @@ const boardFalse = [
     [".", ".", ".", "4", "1", "9", ".", ".", "5"],
     [".", ".", ".", ".", "8", ".", ".", "7", "9"]
 ]
+
+let validadorDeSudoku = function(board) {
+
+    const set = new Set()
+
+    for (let i = 0; i < board.length; i++) {
+        for (let j = 0; j < board[i].length; j++) {
+
+        }
+    }
+
+
+}
