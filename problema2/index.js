@@ -34,8 +34,16 @@ let validadorDeSudoku = function(board) {
             const linha = `Linha: ${i}, valor ${celula}`
             const coluna = `Coluna: ${j}, valor ${celula}`
             const miniCaixa = `Mini Caixa: ${numeroDaCaixa}, valor ${celula}`
+            if (set.has(linha) || set.has(coluna) || set.has(miniCaixa))
+                return false
+            set.add(linha)
+            set.add(coluna)
+            set.add(miniCaixa)
         }
     }
 
-
+    return true
 }
+
+console.log(validadorDeSudoku(boardTrue))
+console.log(validadorDeSudoku(boardFalse))
