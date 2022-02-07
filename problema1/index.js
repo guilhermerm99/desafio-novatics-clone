@@ -1,5 +1,3 @@
-// Problema 1.
-
 function ordenar(array) {
     return array.sort((a, b) => {
         return a - b
